@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+
 
 /**
  * 
@@ -36,8 +39,11 @@ public class Produto implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	//Crianado a tabela pelo springBoot
 	private long id;
+	@NotNull	//Estou dizendo que esse campo não pode fica fazio
 	private String nome;
+	@NotNull	//Estou dizendo que esse campo não pode fica fazio
 	private BigDecimal quantidade;
+	@NotNull	//Estou dizendo que esse campo não pode fica fazio
 	private BigDecimal valor;
 	
 	
