@@ -38,7 +38,7 @@ public class Produto implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	//Crianado a tabela pelo springBoot
-	private long id;
+	private Long id;
 	@NotNull	//Estou dizendo que esse campo não pode fica fazio
 	private String nome;
 	@NotNull	//Estou dizendo que esse campo não pode fica fazio
