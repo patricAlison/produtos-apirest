@@ -6,6 +6,7 @@ import com.produtos.apirest.model.Produto;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 
-	
+	Produto findById(long id);
+	//Produto deletarProduto(Produto produto);	//se eu quero que o delete retorne algo
 	
 }
