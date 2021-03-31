@@ -16,7 +16,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 import java.util.ArrayList;
 
-//Responsavel pela pagina html
+//Responsavel pela pagina html swagger
 
 @Configuration
 @EnableSwagger2
