@@ -66,10 +66,16 @@ public class ProdutoResource {
 	}*/
 	
 	//serve para atualizar os dados
-	@PutMapping("/produto")
+	/*@PutMapping("/produto")
 	public void putProduto(@RequestBody Produto produto) {
 		
 		produtoRepository.save(produto);
+		
+	}*/
+	@PutMapping("/produto")
+	public Produto putProduto(@RequestBody Produto produto) {
+		
+		return produtoRepository.save(produto);
 		
 	}
 	
